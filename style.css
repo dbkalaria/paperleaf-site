@@ -147,23 +147,17 @@ h2 {
 .contact p { margin: 0 auto 22px; max-width: 460px; color: rgba(255, 255, 255, 0.82); }
 .contact .button { background: #ffffff; color: var(--brand); }
 
-/* Privacy policy */
-.summary {
-  background: var(--tint); color: var(--tint-ink);
-  border-radius: 20px; padding: 22px 24px; margin: 0 0 48px;
+/* Privacy policy: one card, like the support page's questions. */
+.date { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+.policy {
+  background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+  box-shadow: var(--shadow); padding: 8px 28px; margin-bottom: 56px;
 }
-.summary h2 { color: var(--tint-ink); font-size: 20px; margin-bottom: 12px; }
-.summary ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.summary li { display: flex; gap: 12px; align-items: flex-start; }
-.summary svg { flex: none; width: 22px; height: 22px; margin-top: 2px; }
-.policy { counter-reset: part; }
 .policy section { padding: 22px 0; border-top: 1px solid var(--line); }
-.policy section:first-child { border-top: 0; padding-top: 0; }
-.policy h3 { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
-.policy h3::before { counter-increment: part; content: counter(part, decimal-leading-zero) "  "; color: var(--muted); }
-.policy p { margin: 0 0 10px; }
+.policy section:first-child { border-top: 0; }
+.policy h2 { font-size: 20px; margin: 0 0 8px; }
+.policy p { margin: 0 0 10px; color: var(--muted); }
 .policy p:last-child { margin-bottom: 0; }
-.date { color: var(--muted); font-size: 15px; margin: 0; }
 
 /* Footer */
 footer { border-top: 1px solid var(--line); margin-top: 24px; }
@@ -181,6 +175,7 @@ footer a:hover { color: var(--ink); }
   .faq summary { padding: 16px 18px; }
   .faq details p { padding: 0 18px 18px; }
   .contact { padding: 30px 20px; }
+  .policy { padding: 4px 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
