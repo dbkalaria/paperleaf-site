@@ -5,30 +5,94 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paperleaf Support</title>
 <meta name="description" content="Help for Paperleaf, the private document and QR scanner for iPhone.">
+<meta name="theme-color" content="#f6f6f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0d0f" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header><img src="icon.png" alt=""><a href="index.html">Paperleaf</a></header>
-  <h1>Paperleaf support</h1>
-  <p>Paperleaf is a document scanner and QR reader for iPhone that works on the device. Paperleaf never uploads your scans.</p>
-  <p>Need help? Email <a href="mailto:appsbydhruvk@gmail.com?subject=Paperleaf">appsbydhruvk@gmail.com</a>, or use Settings &gt; About &gt; Contact support in the app.</p>
-
-  <div class="card">
-    <h2>Where are my scans stored?</h2>
-    <p>In Paperleaf on your iPhone. Paperleaf never uploads your scans. If iCloud Backup is on, Apple's backup of your iPhone includes them.</p>
-    <h2>How do I back up my documents?</h2>
-    <p>Settings &gt; Storage &gt; Export all documents writes one searchable PDF per document to a folder in Files.</p>
-    <h2>I bought Paperleaf on another iPhone.</h2>
-    <p>Settings &gt; Restore Purchases, signed in with the same Apple ID. Family members get the unlock through Family Sharing.</p>
-    <h2>Is there a page limit?</h2>
-    <p>No. Free documents can have any number of pages, and text recognition and QR are free too. The one-time unlock adds Merge, Folders, the Face ID lock, Fill &amp; Sign and more.</p>
-    <h2>Text recognition missed something.</h2>
-    <p>Handwriting is harder to read. Adjust the page or rescan it; changing the language in Settings offers "Re-read text" for older documents.</p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="icon.png" alt="">Paperleaf</a>
+    <nav class="links" aria-label="Pages">
+      <a href="index.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
   </div>
+</header>
 
-  <nav><a href="index.html">Support</a><a href="privacy.html">Privacy policy</a></nav>
+<main class="wrap">
+  <section class="hero">
+    <img class="mark" src="icon.png" alt="Paperleaf icon">
+    <p class="eyebrow">Support</p>
+    <h1>How can we help?</h1>
+    <p class="lede">Paperleaf is a document scanner and QR reader for iPhone that works on the device. <strong>Paperleaf never uploads your scans.</strong></p>
+    <div class="actions">
+      <a class="button" href="mailto:appsbydhruvk@gmail.com?subject=Paperleaf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+        Email support
+      </a>
+      <a class="button quiet" href="privacy.html">Privacy policy</a>
+    </div>
+  </section>
+
+  <ul class="promises">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
+      <b>On your iPhone</b>
+      <span>Scans and text stay on the device.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.3 7.5 9.5 4.4-1.2 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>
+      <b>Nothing collected</b>
+      <span>No account, ads, analytics or tracking.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M14.8 9.2c-.5-.9-1.6-1.4-2.8-1.4-1.6 0-2.8.9-2.8 2.1 0 2.9 5.8 1.5 5.8 4.3 0 1.2-1.3 2.1-3 2.1-1.3 0-2.5-.6-3-1.5"/></svg>
+      <b>Pay once</b>
+      <span>One purchase unlocks more. No subscription.</span>
+    </li>
+  </ul>
+
+  <section class="section" aria-labelledby="questions">
+    <h2 id="questions">Common questions</h2>
+    <div class="faq">
+      <details open>
+        <summary>Where are my scans stored?</summary>
+        <p>In Paperleaf on your iPhone. Paperleaf never uploads your scans. If iCloud Backup is on, Apple's backup of your iPhone includes them.</p>
+      </details>
+      <details>
+        <summary>How do I back up my documents?</summary>
+        <p>Settings &gt; Storage &gt; Export all documents writes one searchable PDF per document to a folder in Files.</p>
+      </details>
+      <details>
+        <summary>I bought Paperleaf on another iPhone.</summary>
+        <p>Settings &gt; Restore Purchases, signed in with the same Apple ID. Family members get the unlock through Family Sharing.</p>
+      </details>
+      <details>
+        <summary>Is there a page limit?</summary>
+        <p>No. Free documents can have any number of pages, and text recognition and QR are free too. The one-time unlock adds Merge, Folders, the Face ID lock, Fill &amp; Sign and more.</p>
+      </details>
+      <details>
+        <summary>Text recognition missed something.</summary>
+        <p>Handwriting is harder to read. Adjust the page or rescan it; changing the language in Settings offers "Re-read text" for older documents.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section contact" aria-labelledby="contact">
+    <h2 id="contact">Still need help?</h2>
+    <p>Email <a href="mailto:appsbydhruvk@gmail.com?subject=Paperleaf" style="color:#fff">appsbydhruvk@gmail.com</a>, or use Settings &gt; About &gt; Contact support in the app.</p>
+    <a class="button" href="mailto:appsbydhruvk@gmail.com?subject=Paperleaf">Write to us</a>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Paperleaf</span>
+    <nav aria-label="Footer"><a href="index.html">Support</a><a href="privacy.html">Privacy policy</a></nav>
+  </div>
+</footer>
 </body>
 </html>
